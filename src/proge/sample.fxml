@@ -5,13 +5,13 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="425.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proge.Controller">
+<AnchorPane fx:id="stseen1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="425.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proge.Controller">
     <Button layoutX="120.0" layoutY="214.0" mnemonicParsing="false" onAction="#vahetus2" prefHeight="97.0" prefWidth="185.0" text="START">
         <font>
           <Font size="41.0" />
         </font>
     </Button>
-   <Button layoutX="142.0" layoutY="342.0" mnemonicParsing="false" onAction="#exit" prefHeight="81.0" prefWidth="142.0" text="VÄLJU">
+   <Button fx:id="Välju" layoutX="142.0" layoutY="342.0" mnemonicParsing="false" onAction="#exit" prefHeight="81.0" prefWidth="142.0" text="VÄLJU">
       <font>
          <Font size="32.0" />
       </font>

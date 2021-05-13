@@ -1,11 +1,13 @@
 package proge;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -16,6 +18,18 @@ public class Controller {
     private Stage lava;
     private Scene stseen;
     private Parent root;
+    @FXML
+    private Button Välju;
+    @FXML
+    private AnchorPane stseen1;
+
+    //Väljumine
+    public void exit(ActionEvent event){
+        lava = (Stage) stseen1.getScene().getWindow();
+        System.out.println("programm on lõpetanud töö.");
+        lava.close();
+    }
+
 
 
     //Vahetus esimesse stseeni (Peamenüü)
@@ -33,12 +47,6 @@ public class Controller {
         stseen = new Scene(root, 420, 500);
         lava.setScene(stseen);
         lava.show();
-    }
-    //Väljumine
-    public void exit(ActionEvent event){
-        ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();
-        lava.setScene(stseen);
-        lava.close();
     }
 
 
